@@ -1,0 +1,24 @@
+.toy-details {
+    background-color: $clr1;
+    margin-bottom: 1em;
+
+    .toy-details-content {
+        padding: 1.5em;
+
+        a,
+        button {
+            padding-inline-end: .5em;
+        }
+    }
+
+    p {
+        @include flex;
+        text-align: justify;
+        margin-bottom: 1em;
+
+        span:first-child {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+    }
+}

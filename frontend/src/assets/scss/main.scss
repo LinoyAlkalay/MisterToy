@@ -1,0 +1,24 @@
+// SETUP
+@import 'setup/fonts';
+@import 'setup/functions';
+@import 'setup/variables';
+@import 'setup/mixins';
+
+// BASICS
+@import 'basics/helpers';
+@import 'basics/base';
+@import 'basics/layout';
+@import 'basics/btn-and-link';
+
+// COMPONENTS
+@import 'cmps/toy-list';
+@import 'cmps/app-header';
+@import 'cmps/app-footer';
+@import 'cmps/toy-preview';
+@import 'cmps/toy-filter-sort';
+
+//VIEWS
+@import 'views/about-us';
+@import 'views/home-page';
+@import 'views/dashboard-page';
+@import 'views/toy-details';

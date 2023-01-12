@@ -1,0 +1,21 @@
+.toy-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+
+    img {
+        aspect-ratio: 3 / 2;
+    }
+
+        @media (min-width: $padded-break-narrow) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+      
+        @media (min-width: $padded-break-wide) {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5em;
+        }
+}
+
+
+

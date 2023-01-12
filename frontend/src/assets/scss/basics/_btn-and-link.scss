@@ -1,0 +1,23 @@
+button {
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: $clr3;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: color .4s, background-color .4s;
+
+    &:hover {
+        color: $clr6;
+    }
+}
+
+a {
+    cursor: pointer;
+    transition: color .4s;
+
+    &:hover {
+        color: $clr6;
+    }
+}

@@ -1,0 +1,35 @@
+.app-header {
+    background-color: $clr2;
+    color: $clr1;
+    margin-bottom: 1em;
+
+    img {
+        position: fixed;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    .main-header {
+        @include flex
+    }
+
+    .nav-app {
+        display: flex;
+        z-index: 1;
+    }
+
+    a {
+        display: block;
+        padding: 1.5em 0;
+        margin-inline-start: 1.5em;
+
+        transition: box-shadow 0.4s;
+
+        &:hover,
+        &.active {
+            box-shadow: inset 0px -2px 0 $clr6;
+            color: $clr6;
+        }
+    }
+}

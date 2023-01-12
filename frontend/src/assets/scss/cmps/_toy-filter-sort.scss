@@ -1,0 +1,14 @@
+.filter-sort-container {
+    @include flex;
+    margin-bottom: .5em;
+
+    input {
+        font-size: 1rem;
+        padding: .7em;
+        border: none;
+    }
+
+    button {
+        padding-inline-start: .5em;
+    }
+}

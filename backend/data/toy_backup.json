@@ -1,0 +1,79 @@
+[
+  {
+    "name": "robot",
+    "price": 79,
+    "labels": [
+      "On wheels",
+      "Box game",
+      "Art"
+    ],
+    "createdAt": 1631031801011,
+    "inStock": false
+  },
+  {
+    "name": "lego",
+    "price": 40,
+    "labels": [
+      "On wheels",
+      "Box game",
+      "Art"
+    ],
+    "createdAt": 1631031801011,
+    "inStock": false
+  },
+  {
+    "name": "doll",
+    "price": 40,
+    "labels": [
+      "On wheels",
+      "Box game",
+      "Art"
+    ],
+    "createdAt": 1631031801011,
+    "inStock": true
+  },
+  {
+    "name": "teddy",
+    "price": 12,
+    "labels": [
+      "On wheels",
+      "Box game",
+      "Baby"
+    ],
+    "createdAt": 1631031801011,
+    "inStock": true
+  },
+  {
+    "name": "buzz",
+    "price": 99,
+    "labels": [
+      "Battery Powered",
+      "Doll",
+      "On wheels"
+    ],
+    "createdAt": 1631031801011,
+    "inStock": true
+  },
+  {
+    "name": "train",
+    "price": 89,
+    "labels": [
+      "Battery Powered",
+      "Puzzle",
+      "On wheels"
+    ],
+    "createdAt": 1631031801011,
+    "inStock": false
+  },
+  {
+    "name": "duck",
+    "price": 59,
+    "labels": [
+      "Art",
+      "Baby",
+      "Doll"
+    ],
+    "createdAt": 1631031801011,
+    "inStock": true
+  }
+]

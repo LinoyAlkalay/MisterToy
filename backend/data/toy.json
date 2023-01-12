@@ -1,0 +1,86 @@
+[
+  {
+    "_id": "118062",
+    "name": "robot",
+    "price": 79,
+    "labels": [
+      "On wheels",
+      "Box game",
+      "Art"
+    ],
+    "createdAt": 1631031801011,
+    "inStock": false
+  },
+  {
+    "_id": "118069",
+    "name": "lego",
+    "price": 40,
+    "labels": [
+      "On wheels",
+      "Box game",
+      "Art"
+    ],
+    "createdAt": 1631031801011,
+    "inStock": false
+  },
+  {
+    "_id": "118070",
+    "name": "doll",
+    "price": 40,
+    "labels": [
+      "On wheels",
+      "Box game",
+      "Art"
+    ],
+    "createdAt": 1631031801011,
+    "inStock": true
+  },
+  {
+    "_id": "118071",
+    "name": "teddy",
+    "price": 12,
+    "labels": [
+      "On wheels",
+      "Box game",
+      "Baby"
+    ],
+    "createdAt": 1631031801011,
+    "inStock": true
+  },
+  {
+    "_id": "118072",
+    "name": "buzz",
+    "price": 99,
+    "labels": [
+      "Battery Powered",
+      "Doll",
+      "On wheels"
+    ],
+    "createdAt": 1631031801011,
+    "inStock": true
+  },
+  {
+    "_id": "118073",
+    "name": "train",
+    "price": 89,
+    "labels": [
+      "Battery Powered",
+      "Puzzle",
+      "On wheels"
+    ],
+    "createdAt": 1631031801011,
+    "inStock": false
+  },
+  {
+    "_id": "118074",
+    "name": "duck",
+    "price": 59,
+    "labels": [
+      "Art",
+      "Baby",
+      "Doll"
+    ],
+    "createdAt": 1631031801011,
+    "inStock": true
+  }
+]

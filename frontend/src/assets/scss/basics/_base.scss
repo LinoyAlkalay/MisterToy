@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: darken($clr1, 3%);
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+.btn {
+    @include blockBtn($color: $clr4);
+
+    @include for-narrow-layout {
+        background-color: $clr2;
+    }
+
+    @include for-normal-layout {
+        background-color: $clr3;
+    }
+
+    @include for-wide-layout {
+        background-color: $clr4;
+    }
+
+    &-round {
+        border-radius: 2em;
+    }
+}

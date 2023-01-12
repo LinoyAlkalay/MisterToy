@@ -1,0 +1,23 @@
+.dashboard-page {
+    margin-bottom: 1em;
+    text-align: center;
+
+    h2 {
+        margin-bottom: .5em;
+    }
+
+    .chart-container {
+        @include flex;
+        flex-direction: column;
+    }
+
+    .chart {
+        margin-bottom: 2em;
+        width: 50vw;
+
+        span {
+            display: block;
+            margin-top: .5em;
+        }
+    }
+}

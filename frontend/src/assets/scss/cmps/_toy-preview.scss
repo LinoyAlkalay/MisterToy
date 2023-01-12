@@ -1,0 +1,21 @@
+.toy-preview {
+    background-color: $clr1;
+
+    .toy-preview-content {
+        padding: 1em;
+
+        a, button {
+            padding-inline-end: .5em;
+        }
+    }
+
+    p {
+        @include flex;
+        margin-bottom: 1em;
+
+        span:first-child {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+    }
+}

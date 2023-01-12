@@ -1,0 +1,11 @@
+.app-footer {
+    background-color: $clr2;
+    color: $clr1;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    span {
+        padding: 1.5em 0;
+    }
+}
