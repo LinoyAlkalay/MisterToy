@@ -1,14 +1,15 @@
 const toyService = require('./toy.service.js')
-// const logger = require('../../services/logger.service')
+const logger = require('../../services/logger.service')
 
 async function getToys(req, res) {
     try {
         // logger.debug('Getting toys')
-        const { filterBy } = req.query.params
-        const toys = await toyService.query(filterBy)
+        // const { filterBy } = req.query.params
+        // const toys = await toyService.query(filterBy)
+        const toys = await toyService.query()
         res.json(toys)
     } catch (err) {
-        // logger.error('Failed to get toys', err)
+        logger.error('Failed to get toys', err)
         res.status(500).send({ err: 'Failed to get toys' })
     }
 }
@@ -19,7 +20,7 @@ async function getToyById(req, res) {
         const toy = await toyService.getById(toyId)
         res.json(toy)
     } catch (err) {
-        //   logger.error('Failed to get toy', err)
+          logger.error('Failed to get toy', err)
         res.status(500).send({ err: 'Failed to get toy' })
     }
 }
@@ -30,21 +31,21 @@ async function removeToy(req, res) {
         const removedId = await toyService.remove(toyId)
         res.send(removedId)
     } catch (err) {
-        // logger.error('Failed to remove toy', err)
+        logger.error('Failed to remove toy', err)
         res.status(500).send({ err: 'Failed to remove toy' })
     }
 }
 
 async function addToy(req, res) {
-    // const {loggedinUser} = req
+    const {loggedinUser} = req
 
     try {
         const toy = req.body
-        //   toy.owner = loggedinUser
+          toy.owner = loggedinUser
         const addedToy = await toyService.add(toy)
         res.json(addedToy)
     } catch (err) {
-        //   logger.error('Failed to add toy', err)
+          logger.error('Failed to add toy', err)
         res.status(500).send({ err: 'Failed to add toy' })
     }
 }
