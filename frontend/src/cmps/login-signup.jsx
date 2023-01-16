@@ -1,4 +1,5 @@
 import { useState } from 'react'
+
 import { showErrorMsg, showSuccessMsg } from '../services/event-bus.service'
 import { signup, login } from '../store/actions/user.action'
 
@@ -24,14 +25,14 @@ export function LoginSignup({ setUser }) {
         ev.preventDefault()
         console.log('ev:', ev)
         const func = isSignupState ? signup : login
-        return func(credentials)
-            .then((user) => {
-                setUser(user)
-                showSuccessMsg(`Welcome ${user.fullname}`)
-            })
-            .catch(err => {
-                showErrorMsg('OOps try again')
-            })
+        func(credentials)
+            // .then((user) => {
+            //     // showSuccessMsg(`Welcome ${user.fullname}`)
+            // })
+            // .catch(err => {
+            //     console.log('err:', err)
+            //     // showErrorMsg('OOps try again')
+            // })
     }
 
     function onToggleSignupState() {
@@ -39,9 +40,8 @@ export function LoginSignup({ setUser }) {
     }
 
     const { username, password, fullname } = credentials
-    return <section className="login-page">
-
-        <form className="login-form" onSubmit={onSubmit}>
+    return <div className="login-signup">
+        <form className="login-signup-form" onSubmit={onSubmit}>
             <input
                 type="text"
                 name="username"
@@ -51,7 +51,6 @@ export function LoginSignup({ setUser }) {
                 required
                 autoFocus
             />
-
             <input
                 type="password"
                 name="password"
@@ -60,7 +59,6 @@ export function LoginSignup({ setUser }) {
                 onChange={handleCredentialsChange}
                 required
             />
-
             {isSignupState && <input
                 type="text"
                 name="fullname"
@@ -69,16 +67,12 @@ export function LoginSignup({ setUser }) {
                 onChange={handleCredentialsChange}
                 required
             />}
-
-            <button>{isSignupState ? 'Signup' : 'Login'}</button>
+            <button type="submit">login</button>
         </form>
-
-        <div className="btns">
+        <div className="login-signup-btns">
             <a href="#" onClick={onToggleSignupState}>
                 {isSignupState ? 'Already a member? Login' : 'New user? Signup here'}
             </a >
         </div>
-    </section >
-
+    </div >
 }
-

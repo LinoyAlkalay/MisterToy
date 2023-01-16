@@ -11,6 +11,7 @@ import { AppFooter } from './cmps/app-footer'
 import { ToyEdit } from './views/toy-edit'
 import { ToyDetails } from './views/toy-details'
 import { DashboardPage } from './views/dashboard-page'
+import { ReviewApp } from './views/review-app'
 import SignIn from './views/sign-in'
 import SignUp from './views/sgin-up'
 
@@ -31,8 +32,9 @@ export default function App() {
             <Route element={<ToyDetails />} path="/toy/:toyId" />
             <Route element={<AboutUs />} path="/about" />
             <Route element={<DashboardPage />} path="/dashboard" />
-            <Route element={<SignIn />} path="/signin" />
-            <Route element={<SignUp />} path="/signup" />
+            {/* <Route element={<ReviewApp />} path="/review" /> */}
+            {/* <Route element={<SignIn />} path="/signin" />
+            <Route element={<SignUp />} path="/signup" /> */}
           </Routes>
 
           {/* <AppFooter /> */}

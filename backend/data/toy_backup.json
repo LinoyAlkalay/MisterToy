@@ -8,7 +8,8 @@
       "Art"
     ],
     "createdAt": 1631031801011,
-    "inStock": false
+    "inStock": false,
+    "img": "robot"
   },
   {
     "name": "lego",
@@ -19,7 +20,8 @@
       "Art"
     ],
     "createdAt": 1631031801011,
-    "inStock": false
+    "inStock": false,
+    "img": "lego"
   },
   {
     "name": "doll",
@@ -30,7 +32,8 @@
       "Art"
     ],
     "createdAt": 1631031801011,
-    "inStock": true
+    "inStock": true,
+    "img": "doll"
   },
   {
     "name": "teddy",
@@ -41,7 +44,8 @@
       "Baby"
     ],
     "createdAt": 1631031801011,
-    "inStock": true
+    "inStock": true,
+    "img": "teddy"
   },
   {
     "name": "buzz",
@@ -52,7 +56,8 @@
       "On wheels"
     ],
     "createdAt": 1631031801011,
-    "inStock": true
+    "inStock": true,
+    "img": "buzz"
   },
   {
     "name": "train",
@@ -63,7 +68,8 @@
       "On wheels"
     ],
     "createdAt": 1631031801011,
-    "inStock": false
+    "inStock": false,
+    "img": "train"
   },
   {
     "name": "duck",
@@ -74,6 +80,7 @@
       "Doll"
     ],
     "createdAt": 1631031801011,
-    "inStock": true
+    "inStock": true,
+    "img": "duck"
   }
 ]

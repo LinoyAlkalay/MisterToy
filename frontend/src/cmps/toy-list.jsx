@@ -8,7 +8,7 @@ export function ToyList({ toys, onRemoveToy }) {
         {toys.map(toy =>
             <li className="toy-preview" key={toy._id}>
                 <div className="img-container">
-                    <img src={require(`../assets/imgs/${toy.name}.jpg`)} alt=""/>
+                    <img src={require(`../assets/imgs/${toy.img}.jpg`)} alt=""/>
                 </div>
                 <div className="toy-preview-content">
                     <ToyPreview toy={toy} />

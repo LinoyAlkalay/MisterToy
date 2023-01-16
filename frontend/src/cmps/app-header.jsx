@@ -7,17 +7,9 @@ import { SET_USER } from '../store/reducers/user.reducer'
 
 export function AppHeader() {
     const user = useSelector((storeState => storeState.userModule.user))
-    const dispatch = useDispatch()
-
-    function setUser(user) {
-        dispatch({ type: SET_USER, user })
-    }
 
     function onLogout() {
         logout()
-            .then(() => {
-                setUser(null)
-            })
     }
 
     return <section className="app-header full main-layout">
@@ -28,6 +20,7 @@ export function AppHeader() {
                 <NavLink to="/toy">Toys</NavLink>
                 <NavLink to="/about">About</NavLink>
                 <NavLink to="/dashboard">Dashboard</NavLink>
+                {/* <NavLink to="/review">review</NavLink> */}
                 {/* <NavLink to="/signin">Sgin In</NavLink> */}
                 {/* <NavLink to="/signup">Sgin Up</NavLink> */}
             </nav>
@@ -38,7 +31,7 @@ export function AppHeader() {
             </section>}
 
             {!user && <section className="user-info">
-                <LoginSignup setUser={setUser} />
+                <LoginSignup/>
             </section>}
         </div>
     </section>

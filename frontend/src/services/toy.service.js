@@ -30,8 +30,8 @@ function save(toy) {
     }
 }
 
-function getEmptyToy(name = '', price = 0, createdAt = Date.now(), inStock = true, labels = []) {
-    return { name, price, createdAt, inStock, labels }
+function getEmptyToy(name = '', price = 0, createdAt = Date.now(), inStock = true, labels = [], img = 'teddy') {
+    return { name, price, createdAt, inStock, labels, img }
 }
 
 function getDefaultFilter() {
